@@ -1,0 +1,49 @@
+{
+  "format": "fp32 clipped core, original training columns",
+  "models": {
+    "internal": {
+      "file": "internal/best.pt",
+      "epoch": 135,
+      "training_sha256": "326bbcee0ec1898524eff540017fc97477a1d9bbdec276813fde33ff4a9500e3",
+      "input_hw": [
+        22,
+        22
+      ],
+      "output_hw": [
+        9,
+        9
+      ],
+      "source_sha256": "36a385f2b1fe8b2cc3d72f38198477d69a52f174a35e85f15a8acfe0a216b88e",
+      "script_sha256": "85e72b5dafe062d4ad02404eed5635b6e26c808ca4a9e7bed45f45af72386794",
+      "python_script_relative_by_batch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "edge": {
+      "file": "edge/best.pt",
+      "epoch": 153,
+      "training_sha256": "c7cba5b9a8776dd05a8a6e227961d64f375cceb8059e4f9c35eaee8c5bb85b6d",
+      "input_hw": [
+        16,
+        22
+      ],
+      "output_hw": [
+        10,
+        9
+      ],
+      "source_sha256": "6526065ecd42ee1a02f3bae630f8f2b986b8a9e4c6820fab91d3e029a4450040",
+      "script_sha256": "b79d3c3a0fc310bdb38cd17155fb8e64883b9ecd53c55318c9d0385a4ffe5815",
+      "python_script_relative_by_batch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "map_sha256": "40264c2eaa2acacb7673eb137567ab5be71dba3de8ac046ccdba3a5f5194b7ce",
+  "uniform_sha256": "9fd4d17d64361d985a054d64a6b8fbdb490bec4c0793cb5a7c2df315254fc767"
+}
