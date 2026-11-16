@@ -1,0 +1,124 @@
+{
+  "source": "V9_2d, raw-eight 100k native GPU revision",
+  "files": [
+    {
+      "file": "private/mechanics2d_resident.m",
+      "sha256": "7e9f4b2ed6ff848eda36179cdbef7957c9027a52248f4e063965eaed2e757de8"
+    },
+    {
+      "file": "private/v9_basis_gpu.m",
+      "sha256": "1882d7841691d906c5aaa506175a492b48fbcb81ac99ea18ff0f72267f392b35"
+    },
+    {
+      "file": "private/assemble_Kreduce_structured_2D.m",
+      "sha256": "da6ff9f9c71244b1a8258680a0b61fd0d37e4bcc5be3e61ffdd133454a97143b"
+    },
+    {
+      "file": "private/coarse_blocks_sparse_2D.m",
+      "sha256": "80e8d2a79d0f1debb0096fc1db4ebfc1b98542d4e8e941349c21e9fad15f863f"
+    },
+    {
+      "file": "private/Ele_stiff_mat.m",
+      "sha256": "3cf8de11438470f63e4122fbb5ef5346959157177b1bbfea45588ede7afea4bb"
+    },
+    {
+      "file": "private/guassInt.m",
+      "sha256": "3d4e572f3a6d8d43c3ca217e085bc86b12ed5831585060d09e692db26ea11808"
+    },
+    {
+      "file": "private/Shape_weightFunction.m",
+      "sha256": "debaf6ffd30c2c9d3a7421ce9e479d5167369173df8b82593b41510304d7c231"
+    },
+    {
+      "file": "private/q4_ke_2D.m",
+      "sha256": "0dd6d03fa9103ca5529f8237df5b9e943a714c2a2eed0c2ea7d6248e4f1c33b1"
+    },
+    {
+      "file": "private/q4_setup_2D.m",
+      "sha256": "eba2e3a206d8f55c4efba72cf927ccb1a83184e05d48e3bcc8c5b05cefd5cd19"
+    },
+    {
+      "file": "basis/__init__.py",
+      "sha256": "43e2ff7b4fa17cd1c14f4f3ad3f7557a8ae294cce973a751d54e64f05193f3e5"
+    },
+    {
+      "file": "basis/local.py",
+      "sha256": "b34b4e71ff5b212cf9424239b5dfb9c682b69703e695108ef351509ea586dbe2"
+    },
+    {
+      "file": "gpu_basis/__init__.py",
+      "sha256": "21e8d9198584a4af29e329187a69f441dbf1b928df5138bff8b9a3c7f0dacfc9"
+    },
+    {
+      "file": "gpu_basis/exact.py",
+      "sha256": "db5f56c27400172ad7419f6b04a0f5b8ab460f42e65adcff59408f0d5f5a663c"
+    },
+    {
+      "file": "gpu_basis/v9_native_basis_mex.cu",
+      "sha256": "884d1ec3a91ceda65e652f0c870db3e0a1cf1ee7cfc43c9c391f2dc4f555a355"
+    },
+    {
+      "file": "private/mechanics2d_basis_gpu_v1_mex.mexw64",
+      "sha256": "c95b5eb236cd5d421c91dbcc286ab61ea719c3ff8b33c4a32d0bc244871bdd2f"
+    },
+    {
+      "file": "private/cuda/mechanics2d_basis_gpu_v1.cu",
+      "sha256": "73b9d27d89d6d0a3c365ec35aa2f02c65c883f6f18b5bd15c75c86e5dbaeed90"
+    },
+    {
+      "file": "private/mechanics2d_blocks_v1_cuda_mex.mexw64",
+      "sha256": "3a64dd9b2f5b4857cd81c34cc742bf0fda0ae58339708ffe2ed68a3746e8e1ba"
+    },
+    {
+      "file": "private/cuda/mechanics2d_blocks_v1_cuda.cu",
+      "sha256": "816dfa794e239dcadd441b28f3707979361738a558726851c17794f0b847fe6b"
+    },
+    {
+      "file": "private/mechanics2d_fields_cuda_mex.mexw64",
+      "sha256": "63ac5e36824e5dc38d9101c991c701a32698da35dc3f5d4f41b7bc6b4dc969f9"
+    },
+    {
+      "file": "private/cuda/mechanics2d_fields_cuda.cu",
+      "sha256": "9bc0838f5d1f3ace9bd86cc8b6589d9e591cd29abb7f1e210301c37e6c900745"
+    },
+    {
+      "file": "private/mechanics2d_q4_cuda_mex.mexw64",
+      "sha256": "4e58e7fc3321280fe2950cb217fc8d18387fb4b274d074305fc1cb804f30d863"
+    },
+    {
+      "file": "private/cuda/mechanics2d_q4_cuda.cu",
+      "sha256": "5989f52ad565086771fa8cad5756eb194685b32a90df215555092292e90ce046"
+    },
+    {
+      "file": "private/v9_native_basis_mex.mexw64",
+      "sha256": "c7f4fd3d2cbb3bc3e5504fe4888fad85f5454c371b8508159e15dd90297658df"
+    },
+    {
+      "file": "gpu_basis/models/internal.ts",
+      "sha256": "85e72b5dafe062d4ad02404eed5635b6e26c808ca4a9e7bed45f45af72386794"
+    },
+    {
+      "file": "gpu_basis/models/edge.ts",
+      "sha256": "b79d3c3a0fc310bdb38cd17155fb8e64883b9ecd53c55318c9d0385a4ffe5815"
+    },
+    {
+      "file": "gpu_basis/models/owner_maps.mat",
+      "sha256": "40264c2eaa2acacb7673eb137567ab5be71dba3de8ac046ccdba3a5f5194b7ce"
+    },
+    {
+      "file": "gpu_basis/models/uniform_templates.mat",
+      "sha256": "9fd4d17d64361d985a054d64a6b8fbdb490bec4c0793cb5a7c2df315254fc767"
+    },
+    {
+      "file": "gpu_basis/models/export.json",
+      "sha256": "f0742dc7ea0869dfcd1b48b986dcea84dc3e47b8174031edf3f65b925ae5a62d"
+    }
+  ],
+  "default_example": {
+    "case": "original smooth-density 120,626,288-DOF dual-FNO cantilever",
+    "source": "V9_2d/compare_large2d.m",
+    "source_sha256": "9750adf62c0f62ebac73d596d4b6e78004e6aee9174ea2fb062d3fd85b6c0ecf",
+    "original_report": "V9_2d/verification_gpuopt/large_comparison.json",
+    "original_report_sha256": "8f6555e7845483d7889f7b55d40b021baa9d66335ff1701915b3e24f70f923ef"
+  }
+}

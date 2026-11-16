@@ -1,0 +1,221 @@
+{
+  "utc": "2026-11-16T08:13:51.724159+00:00",
+  "bytes": 10450561,
+  "files": [
+    {
+      "file": ".gitattributes",
+      "bytes": 123,
+      "sha256": "cebfdbf35851a093a36e8ca149c33394a63f0c806adb63b4cc8ba4f32949f937"
+    },
+    {
+      "file": ".gitignore",
+      "bytes": 78,
+      "sha256": "b196d1e0e7e6e01e3f89b2bab38075d96e485f344b44b1f8fbc207ea303ae071"
+    },
+    {
+      "file": "basis/__init__.py",
+      "bytes": 55,
+      "sha256": "43e2ff7b4fa17cd1c14f4f3ad3f7557a8ae294cce973a751d54e64f05193f3e5"
+    },
+    {
+      "file": "basis/local.py",
+      "bytes": 7241,
+      "sha256": "b34b4e71ff5b212cf9424239b5dfb9c682b69703e695108ef351509ea586dbe2"
+    },
+    {
+      "file": "build_mex.m",
+      "bytes": 1118,
+      "sha256": "e7f012c141898753d59e2996195f287300969915bba6176146ae66ba83c4e596"
+    },
+    {
+      "file": "gpu_basis/__init__.py",
+      "bytes": 81,
+      "sha256": "21e8d9198584a4af29e329187a69f441dbf1b928df5138bff8b9a3c7f0dacfc9"
+    },
+    {
+      "file": "gpu_basis/exact.py",
+      "bytes": 3304,
+      "sha256": "db5f56c27400172ad7419f6b04a0f5b8ab460f42e65adcff59408f0d5f5a663c"
+    },
+    {
+      "file": "gpu_basis/models/edge.ts",
+      "bytes": 4254697,
+      "sha256": "b79d3c3a0fc310bdb38cd17155fb8e64883b9ecd53c55318c9d0385a4ffe5815"
+    },
+    {
+      "file": "gpu_basis/models/export.json",
+      "bytes": 1411,
+      "sha256": "f0742dc7ea0869dfcd1b48b986dcea84dc3e47b8174031edf3f65b925ae5a62d"
+    },
+    {
+      "file": "gpu_basis/models/internal.ts",
+      "bytes": 4255233,
+      "sha256": "85e72b5dafe062d4ad02404eed5635b6e26c808ca4a9e7bed45f45af72386794"
+    },
+    {
+      "file": "gpu_basis/models/owner_maps.mat",
+      "bytes": 57808,
+      "sha256": "40264c2eaa2acacb7673eb137567ab5be71dba3de8ac046ccdba3a5f5194b7ce"
+    },
+    {
+      "file": "gpu_basis/models/uniform_templates.mat",
+      "bytes": 288208,
+      "sha256": "9fd4d17d64361d985a054d64a6b8fbdb490bec4c0793cb5a7c2df315254fc767"
+    },
+    {
+      "file": "gpu_basis/v9_native_basis_mex.cu",
+      "bytes": 9985,
+      "sha256": "884d1ec3a91ceda65e652f0c870db3e0a1cf1ee7cfc43c9c391f2dc4f555a355"
+    },
+    {
+      "file": "mechanics2d.m",
+      "bytes": 2363,
+      "sha256": "7c10191d1085b67144c557f927bed7579ea48fe6fcccc527ed1b2ff5267ba918"
+    },
+    {
+      "file": "private/assemble_Kreduce_structured_2D.m",
+      "bytes": 1709,
+      "sha256": "da6ff9f9c71244b1a8258680a0b61fd0d37e4bcc5be3e61ffdd133454a97143b"
+    },
+    {
+      "file": "private/coarse_blocks_sparse_2D.m",
+      "bytes": 728,
+      "sha256": "80e8d2a79d0f1debb0096fc1db4ebfc1b98542d4e8e941349c21e9fad15f863f"
+    },
+    {
+      "file": "private/cuda/mechanics2d_basis_gpu_v1.cu",
+      "bytes": 13849,
+      "sha256": "73b9d27d89d6d0a3c365ec35aa2f02c65c883f6f18b5bd15c75c86e5dbaeed90"
+    },
+    {
+      "file": "private/cuda/mechanics2d_blocks_v1_cuda.cu",
+      "bytes": 22100,
+      "sha256": "816dfa794e239dcadd441b28f3707979361738a558726851c17794f0b847fe6b"
+    },
+    {
+      "file": "private/cuda/mechanics2d_fields_cuda.cu",
+      "bytes": 4117,
+      "sha256": "9bc0838f5d1f3ace9bd86cc8b6589d9e591cd29abb7f1e210301c37e6c900745"
+    },
+    {
+      "file": "private/cuda/mechanics2d_q4_cuda.cu",
+      "bytes": 27017,
+      "sha256": "5989f52ad565086771fa8cad5756eb194685b32a90df215555092292e90ce046"
+    },
+    {
+      "file": "private/Ele_stiff_mat.m",
+      "bytes": 1719,
+      "sha256": "3cf8de11438470f63e4122fbb5ef5346959157177b1bbfea45588ede7afea4bb"
+    },
+    {
+      "file": "private/guassInt.m",
+      "bytes": 885,
+      "sha256": "3d4e572f3a6d8d43c3ca217e085bc86b12ed5831585060d09e692db26ea11808"
+    },
+    {
+      "file": "private/mechanics2d_basis_gpu_v1_mex.mexw64",
+      "bytes": 239104,
+      "sha256": "076da34b8188f04271dbe67595ef229196c772c2660c8d356e72e68a48c468fb"
+    },
+    {
+      "file": "private/mechanics2d_blocks_v1_cuda_mex.mexw64",
+      "bytes": 316928,
+      "sha256": "ab8da93be4f7f1cae2ea2be490024bcf6fc680718076d445ec8d9841311db74e"
+    },
+    {
+      "file": "private/mechanics2d_fields_cuda_mex.mexw64",
+      "bytes": 46080,
+      "sha256": "461dd4c2dff53b7835752ad9032f8091f7894d5c38df0ed51552e61720addd6d"
+    },
+    {
+      "file": "private/mechanics2d_q4_cuda_mex.mexw64",
+      "bytes": 395264,
+      "sha256": "956b0533fc50b72d46cf98a618602ac1d2a6059f1b97634778bcc1eee4943560"
+    },
+    {
+      "file": "private/mechanics2d_resident.m",
+      "bytes": 6739,
+      "sha256": "65b954fc3c1a7d2ec44abe7b1bb972c6ea6367f696963abbe14dc1a6398c2ebe"
+    },
+    {
+      "file": "private/q4_ke_2D.m",
+      "bytes": 450,
+      "sha256": "0dd6d03fa9103ca5529f8237df5b9e943a714c2a2eed0c2ea7d6248e4f1c33b1"
+    },
+    {
+      "file": "private/q4_setup_2D.m",
+      "bytes": 633,
+      "sha256": "eba2e3a206d8f55c4efba72cf927ccb1a83184e05d48e3bcc8c5b05cefd5cd19"
+    },
+    {
+      "file": "private/Shape_weightFunction.m",
+      "bytes": 11754,
+      "sha256": "debaf6ffd30c2c9d3a7421ce9e479d5167369173df8b82593b41510304d7c231"
+    },
+    {
+      "file": "private/v9_basis_gpu.m",
+      "bytes": 5769,
+      "sha256": "f1e96ff105619352dd04127f31b543880a45d0cb48fcc829ae60c01a44453d56"
+    },
+    {
+      "file": "private/v9_environment.m",
+      "bytes": 1021,
+      "sha256": "66c4f7bf8dc025adb82f081f0d37b06a3b6ae67799304c80188905d07ba83c20"
+    },
+    {
+      "file": "private/v9_native_basis_mex.mexw64",
+      "bytes": 398336,
+      "sha256": "c5ff1471005ddd8d5345adfd674cfb43f477823743215f3db4818f24bc8f2586"
+    },
+    {
+      "file": "README.md",
+      "bytes": 9226,
+      "sha256": "7370729b97ac19c914d4a4d367d7acd1e3574b6408593f3f7279d038db8ac579"
+    },
+    {
+      "file": "requirements.txt",
+      "bytes": 103,
+      "sha256": "33a3315037b3c5cde05ebc5607b0be63191c75e442c96dd92b919f56f681a4df"
+    },
+    {
+      "file": "RUN.cmd",
+      "bytes": 278,
+      "sha256": "2058aff12134c756939c72a8c4871c2626e5fd028084725a31ed562531602570"
+    },
+    {
+      "file": "run.py",
+      "bytes": 3681,
+      "sha256": "4e2eec28ec81d4faac1079952873a405b1ae8964c2ae3dd6af3879403efda2fb"
+    },
+    {
+      "file": "run_random_density.m",
+      "bytes": 7625,
+      "sha256": "c2c806a561393759785c230fc40f3de7a9cc7ea602a202ec2468df335906251c"
+    },
+    {
+      "file": "SETUP.cmd",
+      "bytes": 115,
+      "sha256": "744c94b5aaa95b0ad4fc4250b67b08371c27101a840a83a32e404e0e1ca97e77"
+    },
+    {
+      "file": "setup_env.py",
+      "bytes": 2080,
+      "sha256": "b0878d8b8bcaf30f6e78898d58ee38f71ebce8394d715214947ba5029f420401"
+    },
+    {
+      "file": "source_origin.json",
+      "bytes": 4641,
+      "sha256": "c928d8a038a78f6a499fe12cfe2cdb2ea3b9f633e7c12c4bb4ba848c5047b023"
+    },
+    {
+      "file": "validation.json",
+      "bytes": 46152,
+      "sha256": "63a1ce024e0b3831124c05e91ef63667435dcc3964a549ac72b704f113e10cbc"
+    },
+    {
+      "file": "verify.py",
+      "bytes": 753,
+      "sha256": "a41a008e4ec7f29c7acb2d8a85b3f8d16ee2d70fa2f11a0a569721d6196c8f90"
+    }
+  ]
+}

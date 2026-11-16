@@ -1,0 +1,11 @@
+.venv/
+results/
+__pycache__/
+*.pyc
+*.asv
+*.log
+*.zip
+build/
+*.obj
+*.lib
+*.exp

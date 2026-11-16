@@ -1,0 +1,1304 @@
+{
+  "status": "PASS",
+  "utc": "2026-11-16T08:13:51.194137+00:00",
+  "revision": "default_smooth120m_20261116",
+  "defaults": {
+    "case": "smooth",
+    "size": "120m",
+    "edge": "fno",
+    "correction_steps": 3,
+    "with_reference": true
+  },
+  "environment": {
+    "os": "64-bit Windows 11",
+    "matlab": "R2025a Update 1",
+    "python": "3.10.19",
+    "torch": "2.5.1+cu121",
+    "cuda": "12.1",
+    "numpy": "2.0.1",
+    "scipy": "1.15.3",
+    "gpu": "NVIDIA GeForce RTX 4090, 24 GB",
+    "system_ram_gib": 128,
+    "fresh_virtual_environment_install": true,
+    "numpy_scipy_torch_loaded_from_local_virtual_environment": true
+  },
+  "source_build": {
+    "status": "PASS",
+    "compiled_mex_count": 5,
+    "toolchain": "MATLAB R2025a mexcuda, bundled CUDA compiler, Microsoft C++",
+    "post_build_case": {
+      "size": "small",
+      "grid_elements": [
+        181,
+        91
+      ],
+      "dofs": 33488,
+      "owners": [
+        20,
+        10
+      ],
+      "domain_xy": [
+        181,
+        91
+      ],
+      "element_side": 1,
+      "thickness": 1,
+      "nu": 0.3,
+      "E0": 1,
+      "material": "Independent Uniform[0.01,1] fine-cell E/E0, with solid rectangle x/Lx in [32/181,78/181], y/Ly in [18/91,50/91].",
+      "seed": 91732,
+      "rng": "MATLAB mt19937ar, column-major",
+      "material_sha256_f64": "a03bde223d2bc10fe6577a1fc60467e58d64a9a96df26a32f92e3f9ddc8445e6",
+      "load_node_1based": 16698,
+      "load_xy": [
+        181,
+        45
+      ],
+      "load_vector": [
+        0,
+        -1
+      ],
+      "fixed_edge": "x=0, ux=uy=0",
+      "edge_mode": "fno",
+      "basis": {
+        "owners": 200,
+        "routes": {
+          "type_1": 1,
+          "type_2": 18,
+          "type_3": 1,
+          "type_4": 8,
+          "type_5": 144,
+          "type_6": 8,
+          "type_7": 1,
+          "type_8": 18,
+          "type_9": 1,
+          "exact_clamped": 10,
+          "exact_corner": 2,
+          "fno_internal": 142,
+          "fno_edge": 44,
+          "uniform_build": 1,
+          "uniform_reuse": 1
+        },
+        "checkpoints": {
+          "internal": {
+            "file": "internal/best.pt",
+            "epoch": 135,
+            "training_sha256": "326bbcee0ec1898524eff540017fc97477a1d9bbdec276813fde33ff4a9500e3",
+            "checkpoint_sha256": "36a385f2b1fe8b2cc3d72f38198477d69a52f174a35e85f15a8acfe0a216b88e",
+            "script_sha256": "85e72b5dafe062d4ad02404eed5635b6e26c808ca4a9e7bed45f45af72386794"
+          },
+          "edge": {
+            "file": "edge/best.pt",
+            "epoch": 153,
+            "training_sha256": "c7cba5b9a8776dd05a8a6e227961d64f375cceb8059e4f9c35eaee8c5bb85b6d",
+            "checkpoint_sha256": "6526065ecd42ee1a02f3bae630f8f2b986b8a9e4c6820fab91d3e029a4450040",
+            "script_sha256": "b79d3c3a0fc310bdb38cd17155fb8e64883b9ecd53c55318c9d0385a4ffe5815"
+          }
+        },
+        "basis_mode": "fno",
+        "backend": "native-cuda-libtorch-raw8",
+        "original_columns": 8,
+        "corner_normalization": false,
+        "uniformity": "all physical cells in clipped oversampling window",
+        "uniform_templates": "precomputed exact uniform Q4 per orientation and clamp",
+        "fixed_end": "left",
+        "numerical_fallbacks": 0,
+        "timing": {
+          "classify_and_route": 0.0038161,
+          "uniform_templates": 0.0020214,
+          "exact_windows_cpu_solve_and_put": 0.7170326,
+          "exact_and_template": 0.719054,
+          "batched_fno_and_decode": 0.0611779,
+          "gpu_gather": 3.2736000604927546e-05,
+          "forward": 0.058919265747070314,
+          "gpu_scatter": 2.7456000447273257e-05,
+          "total": 0.7901498
+        },
+        "inference": {
+          "internal": {
+            "owner_count": 142,
+            "batches": 1,
+            "cache_hit": 1,
+            "load_seconds": 2.92e-05,
+            "gather_seconds": 1.840000040829182e-05,
+            "forward_seconds": 0.03002060890197754,
+            "scatter_seconds": 1.1264000087976456e-05,
+            "total_seconds": 0.0301731
+          },
+          "edge": {
+            "owner_count": 44,
+            "batches": 1,
+            "cache_hit": 1,
+            "load_seconds": 2.9e-05,
+            "gather_seconds": 1.4336000196635724e-05,
+            "forward_seconds": 0.028898656845092775,
+            "scatter_seconds": 1.61920003592968e-05,
+            "total_seconds": 0.0290333
+          }
+        },
+        "learned_models": [
+          "internal",
+          "edge"
+        ]
+      },
+      "coarse_relative_residual": 6.524673622416881e-09,
+      "corrected_fine_relative_residual": 0.034182863451048345,
+      "initial_load_uy": -82.95844479433333,
+      "corrected_load_uy": -94.2678208549401,
+      "fixed_wall_max": 0,
+      "virtual_work_error": 1.713008814284415e-16,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "matlab": "25.1.0.2973910 (R2025a) Update 1",
+      "timing_seconds": {
+        "mesh": 0.002502,
+        "basis": 0.7908037,
+        "plan": 0,
+        "assembly": 0.0201756,
+        "load": 0.0002073,
+        "solve": 0.0193411,
+        "recover": 0.0002491,
+        "physical_map": 0.0004328,
+        "seed_ready": 0.834197,
+        "fine_setup": 0.0022494,
+        "correction": 0.0064377,
+        "corrected_ready": 0.843026,
+        "certificate": 0.0016475,
+        "download": 0.0005822,
+        "total": 0.845345
+      },
+      "complete_call_seconds": 0.8513235,
+      "timing_scope": "One warmed mechanics2d call, including fresh bases, reduced assembly/solve, three Q4 corrections, certification and host return. Material creation, warmup, reference, metrics and writes excluded.",
+      "reference": {
+        "solver": "FP64 physical Q4, zero-initial geometric multigrid PCG",
+        "iterations": 20,
+        "true_relative_residual": 8.328107497560331e-10,
+        "seconds": 0.0254931,
+        "load_uy": -94.302348156986,
+        "reaction_xy": [
+          -7.879050190062742e-11,
+          1.000000000106781
+        ]
+      },
+      "initial": {
+        "displacement_l2": 0.09187903486302647,
+        "energy_density_l2": 0.7367575891703202,
+        "displacement_energy_norm": 0.34000606999535127,
+        "integrated_energy": 41.2581410612951,
+        "reference_energy": 47.151174077585495,
+        "load_uy": -82.95844479433333,
+        "load_uy_relative_error": 0.12029290451780017
+      },
+      "corrected": {
+        "displacement_l2": 0.00033045403470137826,
+        "energy_density_l2": 0.00966448349905322,
+        "displacement_energy_norm": 0.008359018312936827,
+        "integrated_energy": 47.11994137835644,
+        "reference_energy": 47.151174077585495,
+        "load_uy": -94.2678208549401,
+        "load_uy_relative_error": 0.000366134064746948
+      }
+    }
+  },
+  "default_120m": {
+    "case": "smooth",
+    "size": "120m",
+    "grid_elements": [
+      10981,
+      5491
+    ],
+    "dofs": 120626288.0,
+    "owners": [
+      1220,
+      610
+    ],
+    "domain_xy": [
+      10981,
+      5491
+    ],
+    "element_side": 1,
+    "thickness": 1,
+    "nu": 0.3,
+    "E0": 1,
+    "Emin": 1e-06,
+    "penal": 1,
+    "material": "Analytic smooth density: rho=0.55+0.35*cos(3*pi*(j-0.5)/ny)*sin(4*pi*(i-0.5)/nx). E/E0=1e-6+(1-1e-6)*rho.",
+    "material_sha256_f64": "2ac2dd1152091a88aca9cd83449eeb4414e5b5bb8059a80d1c9244ffe1c45529",
+    "load_node_1based": 60310398.0,
+    "load_xy": [
+      10981,
+      2745
+    ],
+    "load_vector": [
+      0,
+      -1
+    ],
+    "fixed_edge": "x=0, ux=uy=0",
+    "edge_mode": "fno",
+    "basis": {
+      "owners": 744200,
+      "routes": {
+        "type_1": 1,
+        "type_2": 1218,
+        "type_3": 1,
+        "type_4": 608,
+        "type_5": 740544,
+        "type_6": 608,
+        "type_7": 1,
+        "type_8": 1218,
+        "type_9": 1,
+        "exact_clamped": 610,
+        "exact_corner": 2,
+        "fno_internal": 740544,
+        "fno_edge": 3044
+      },
+      "checkpoints": {
+        "internal": {
+          "file": "internal/best.pt",
+          "epoch": 135,
+          "training_sha256": "326bbcee0ec1898524eff540017fc97477a1d9bbdec276813fde33ff4a9500e3",
+          "checkpoint_sha256": "36a385f2b1fe8b2cc3d72f38198477d69a52f174a35e85f15a8acfe0a216b88e",
+          "script_sha256": "85e72b5dafe062d4ad02404eed5635b6e26c808ca4a9e7bed45f45af72386794"
+        },
+        "edge": {
+          "file": "edge/best.pt",
+          "epoch": 153,
+          "training_sha256": "c7cba5b9a8776dd05a8a6e227961d64f375cceb8059e4f9c35eaee8c5bb85b6d",
+          "checkpoint_sha256": "6526065ecd42ee1a02f3bae630f8f2b986b8a9e4c6820fab91d3e029a4450040",
+          "script_sha256": "b79d3c3a0fc310bdb38cd17155fb8e64883b9ecd53c55318c9d0385a4ffe5815"
+        }
+      },
+      "basis_mode": "fno",
+      "backend": "native-cuda-libtorch-raw8",
+      "original_columns": 8,
+      "corner_normalization": false,
+      "uniformity": "all physical cells in clipped oversampling window",
+      "uniform_templates": "precomputed exact uniform Q4 per orientation and clamp",
+      "fixed_end": "left",
+      "numerical_fallbacks": 0,
+      "timing": {
+        "classify_and_route": 0.1079038,
+        "uniform_templates": 0.0029303,
+        "exact_windows_cpu_solve_and_put": 1.0168037,
+        "exact_and_template": 1.0197340000000001,
+        "batched_fno_and_decode": 4.6680512,
+        "gpu_gather": 0.011758048158604697,
+        "forward": 4.632984545230869,
+        "gpu_scatter": 0.01407600018149272,
+        "total": 5.8064056
+      },
+      "inference": {
+        "internal": {
+          "owner_count": 740544,
+          "batches": 1447,
+          "cache_hit": 1,
+          "load_seconds": 2.27e-05,
+          "gather_seconds": 0.011705888159107463,
+          "forward_seconds": 4.589467616558078,
+          "scatter_seconds": 0.013965152179356967,
+          "total_seconds": 4.6182974
+        },
+        "edge": {
+          "owner_count": 3044,
+          "batches": 6,
+          "cache_hit": 1,
+          "load_seconds": 2.06e-05,
+          "gather_seconds": 5.215999949723482e-05,
+          "forward_seconds": 0.04351692867279053,
+          "scatter_seconds": 0.00011084800213575363,
+          "total_seconds": 0.0437913
+        }
+      },
+      "learned_models": [
+        "internal",
+        "edge"
+      ]
+    },
+    "coarse_relative_residual": 8.396550943490768e-09,
+    "corrected_fine_relative_residual": 0.012583634027353846,
+    "initial_load_uy": -80.01895907079339,
+    "corrected_load_uy": -82.72367279746425,
+    "fixed_wall_max": 0,
+    "virtual_work_error": 0,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "matlab": "25.1.0.2973910 (R2025a) Update 1",
+    "timing_seconds": {
+      "mesh": 0.1599089,
+      "basis": 5.8071255,
+      "plan": 0,
+      "assembly": 0.230309,
+      "load": 0.0020297,
+      "solve": 2.2222646,
+      "recover": 0.0241151,
+      "physical_map": 0.0275172,
+      "seed_ready": 8.5000404,
+      "fine_setup": 0.0217684,
+      "correction": 1.2196932,
+      "corrected_ready": 9.7416782,
+      "certificate": 0.132158,
+      "download": 0.4549193,
+      "total": 10.3435171
+    },
+    "complete_call_seconds": 10.984439,
+    "timing_scope": "One warmed mechanics2d call, including fresh bases, reduced assembly/solve, three Q4 corrections, certification and host return. Material creation, warmup, reference, metrics and writes excluded.",
+    "reference": {
+      "solver": "FP64 physical Q4, zero-initial geometric multigrid PCG",
+      "iterations": 18,
+      "true_relative_residual": 7.965332714558866e-10,
+      "seconds": 4.7592384,
+      "load_uy": -82.73533774566944,
+      "reaction_xy": [
+        -4.679527931816807e-08,
+        0.9999999077868211
+      ]
+    },
+    "initial": {
+      "displacement_l2": 0.0006699895133031896,
+      "energy_density_l2": 0.8823243854056444,
+      "displacement_energy_norm": 0.17604416074401624,
+      "integrated_energy": 39.93333569970357,
+      "reference_energy": 41.36766641271994,
+      "load_uy": -80.01895907079339,
+      "load_uy_relative_error": 0.03283214583865324
+    },
+    "corrected": {
+      "displacement_l2": 9.564516717143154e-07,
+      "energy_density_l2": 0.008511069910263897,
+      "displacement_energy_norm": 0.0031399955749026377,
+      "integrated_energy": 41.356409332016476,
+      "reference_energy": 41.36766641271994,
+      "load_uy": -82.72367279746425,
+      "load_uy_relative_error": 0.00014099112329790664
+    }
+  },
+  "default_full_field_readback": {
+    "status": "PASS",
+    "case": "original_smooth_dual_fno_120m",
+    "dofs": 120626288,
+    "full_array_comparison_to_original_optimized_v9": {
+      "U0": {
+        "relative_l2_difference": 0.0,
+        "maximum_absolute_difference": 0.0,
+        "identical": true,
+        "new_array_sha256_f64": "f92649bd937452617d207122c8022ffaeb7d85c9f39922c2165ec0d2a0cdfeb9"
+      },
+      "U3": {
+        "relative_l2_difference": 0.0,
+        "maximum_absolute_difference": 0.0,
+        "identical": true,
+        "new_array_sha256_f64": "e1bbff046f7d32b52f246b409c3262d4546ce3f10b13102b4899f163f5cc543b"
+      },
+      "Uref": {
+        "relative_l2_difference": 0.0,
+        "maximum_absolute_difference": 0.0,
+        "identical": true,
+        "new_array_sha256_f64": "c8e8994d425fbfe8ec39ab588aab7b3b286f507aadd3ff1f02d56595fc2fa993"
+      },
+      "rho": {
+        "maximum_absolute_difference_from_formula": 2.220446049250313e-16,
+        "sha256_f64": "2ac2dd1152091a88aca9cd83449eeb4414e5b5bb8059a80d1c9244ffe1c45529",
+        "checksum_matches_receipt": true
+      }
+    },
+    "metric_differences": {
+      "initial": {
+        "displacement_l2": 0.0,
+        "energy_density_l2": 1.1102230246251565e-16,
+        "displacement_energy_norm": 2.7755575615628914e-17,
+        "integrated_energy": 3.552713678800501e-14
+      },
+      "corrected": {
+        "displacement_l2": 0.0,
+        "energy_density_l2": 0.0,
+        "displacement_energy_norm": 8.673617379884035e-19,
+        "integrated_energy": -1.4210854715202004e-14
+      }
+    },
+    "configuration_checks": "Original grid, domain, load node, modulus rule, two FNO routing counts, fixed wall and strict reference verified."
+  },
+  "small_smooth_exact_edge": {
+    "case": "smooth",
+    "size": "small",
+    "grid_elements": [
+      181,
+      91
+    ],
+    "dofs": 33488,
+    "owners": [
+      20,
+      10
+    ],
+    "domain_xy": [
+      181,
+      91
+    ],
+    "element_side": 1,
+    "thickness": 1,
+    "nu": 0.3,
+    "E0": 1,
+    "Emin": 1e-06,
+    "penal": 1,
+    "material": "Analytic smooth density: rho=0.55+0.35*cos(3*pi*(j-0.5)/ny)*sin(4*pi*(i-0.5)/nx). E/E0=1e-6+(1-1e-6)*rho.",
+    "material_sha256_f64": "e721ac0719192a47a541cecbb474bf835863483c3ecee46824b46be9308bf688",
+    "load_node_1based": 16698,
+    "load_xy": [
+      181,
+      45
+    ],
+    "load_vector": [
+      0,
+      -1
+    ],
+    "fixed_edge": "x=0, ux=uy=0",
+    "edge_mode": "exact",
+    "basis": {
+      "owners": 200,
+      "routes": {
+        "type_1": 1,
+        "type_2": 18,
+        "type_3": 1,
+        "type_4": 8,
+        "type_5": 144,
+        "type_6": 8,
+        "type_7": 1,
+        "type_8": 18,
+        "type_9": 1,
+        "exact_clamped": 10,
+        "exact_corner": 2,
+        "exact_edge": 44,
+        "fno_internal": 144
+      },
+      "checkpoints": {
+        "internal": {
+          "file": "internal/best.pt",
+          "epoch": 135,
+          "training_sha256": "326bbcee0ec1898524eff540017fc97477a1d9bbdec276813fde33ff4a9500e3",
+          "checkpoint_sha256": "36a385f2b1fe8b2cc3d72f38198477d69a52f174a35e85f15a8acfe0a216b88e",
+          "script_sha256": "85e72b5dafe062d4ad02404eed5635b6e26c808ca4a9e7bed45f45af72386794"
+        }
+      },
+      "basis_mode": "internal-fno",
+      "backend": "native-cuda-libtorch-raw8",
+      "original_columns": 8,
+      "corner_normalization": false,
+      "uniformity": "all physical cells in clipped oversampling window",
+      "uniform_templates": "precomputed exact uniform Q4 per orientation and clamp",
+      "fixed_end": "left",
+      "numerical_fallbacks": 0,
+      "timing": {
+        "classify_and_route": 0.0046827,
+        "uniform_templates": 0.0004199,
+        "exact_windows_cpu_solve_and_put": 0.7766783,
+        "exact_and_template": 0.7770982000000001,
+        "batched_fno_and_decode": 0.0351436,
+        "gpu_gather": 7.168000098317862e-06,
+        "forward": 0.03305279922485352,
+        "gpu_scatter": 1.727999933063984e-05,
+        "total": 0.8241173
+      },
+      "inference": {
+        "internal": {
+          "owner_count": 144,
+          "batches": 1,
+          "cache_hit": 1,
+          "load_seconds": 8.53e-05,
+          "gather_seconds": 7.168000098317862e-06,
+          "forward_seconds": 0.03305279922485352,
+          "scatter_seconds": 1.727999933063984e-05,
+          "total_seconds": 0.0335081
+        }
+      },
+      "learned_models": [
+        "internal"
+      ]
+    },
+    "coarse_relative_residual": 7.965616003589166e-09,
+    "corrected_fine_relative_residual": 0.01064015984577636,
+    "initial_load_uy": -73.99602155393245,
+    "corrected_load_uy": -76.91336088396748,
+    "fixed_wall_max": 0,
+    "virtual_work_error": 0,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "matlab": "25.1.0.2973910 (R2025a) Update 1",
+    "timing_seconds": {
+      "mesh": 0.0026753,
+      "basis": 0.8247756,
+      "plan": 0,
+      "assembly": 0.017416,
+      "load": 0.0001698,
+      "solve": 0.0183045,
+      "recover": 0.0001596,
+      "physical_map": 0.0004179,
+      "seed_ready": 0.8642709,
+      "fine_setup": 0.0023047,
+      "correction": 0.0068619,
+      "corrected_ready": 0.8735577,
+      "certificate": 0.0016322,
+      "download": 0.0006392,
+      "total": 0.8759228
+    },
+    "complete_call_seconds": 0.8823396,
+    "timing_scope": "One warmed mechanics2d call, including fresh bases, reduced assembly/solve, three Q4 corrections, certification and host return. Material creation, warmup, reference, metrics and writes excluded.",
+    "reference": {
+      "solver": "FP64 physical Q4, zero-initial geometric multigrid PCG",
+      "iterations": 16,
+      "true_relative_residual": 6.315786682785323e-10,
+      "seconds": 0.0244124,
+      "load_uy": -76.91619973863868,
+      "reaction_xy": [
+        -7.688442937858753e-11,
+        1.0000000003470424
+      ]
+    },
+    "initial": {
+      "displacement_l2": 0.004151572675862315,
+      "energy_density_l2": 0.7409124516717868,
+      "displacement_energy_norm": 0.186858251104976,
+      "integrated_energy": 36.880724930012256,
+      "reference_energy": 38.45809986866579,
+      "load_uy": -73.99602155393245,
+      "load_uy_relative_error": 0.03796571066471044
+    },
+    "corrected": {
+      "displacement_l2": 3.695621261792637e-05,
+      "energy_density_l2": 0.003593511719621119,
+      "displacement_energy_norm": 0.0027771701133799064,
+      "integrated_energy": 38.45555762877524,
+      "reference_energy": 38.45809986866579,
+      "load_uy": -76.91336088396748,
+      "load_uy_relative_error": 3.6908410462888064e-05
+    }
+  },
+  "historical_iid_release_validation": {
+    "status": "PASS",
+    "utc": "2026-11-16T02:53:43.583585+00:00",
+    "environment": {
+      "os": "64-bit Windows 11",
+      "matlab": "R2025a Update 1",
+      "python": "3.10.19",
+      "torch": "2.5.1+cu121",
+      "cuda": "12.1",
+      "numpy": "2.0.1",
+      "scipy": "1.15.3",
+      "gpu": "NVIDIA GeForce RTX 4090, 24 GB",
+      "system_ram_gib": 128,
+      "fresh_virtual_environment_install": true,
+      "numpy_scipy_torch_loaded_from_local_virtual_environment": true
+    },
+    "source_build": {
+      "status": "PASS",
+      "compiled_mex_count": 5,
+      "toolchain": "MATLAB R2025a mexcuda, bundled CUDA compiler, Microsoft C++",
+      "post_build_case": {
+        "size": "small",
+        "grid_elements": [
+          181,
+          91
+        ],
+        "dofs": 33488,
+        "owners": [
+          20,
+          10
+        ],
+        "domain_xy": [
+          181,
+          91
+        ],
+        "element_side": 1,
+        "thickness": 1,
+        "nu": 0.3,
+        "E0": 1,
+        "material": "Independent Uniform[0.01,1] fine-cell E/E0, with solid rectangle x/Lx in [32/181,78/181], y/Ly in [18/91,50/91].",
+        "seed": 91732,
+        "rng": "MATLAB mt19937ar, column-major",
+        "material_sha256_f64": "a03bde223d2bc10fe6577a1fc60467e58d64a9a96df26a32f92e3f9ddc8445e6",
+        "load_node_1based": 16698,
+        "load_xy": [
+          181,
+          45
+        ],
+        "load_vector": [
+          0,
+          -1
+        ],
+        "fixed_edge": "x=0, ux=uy=0",
+        "edge_mode": "fno",
+        "basis": {
+          "owners": 200,
+          "routes": {
+            "type_1": 1,
+            "type_2": 18,
+            "type_3": 1,
+            "type_4": 8,
+            "type_5": 144,
+            "type_6": 8,
+            "type_7": 1,
+            "type_8": 18,
+            "type_9": 1,
+            "exact_clamped": 10,
+            "exact_corner": 2,
+            "fno_internal": 142,
+            "fno_edge": 44,
+            "uniform_build": 1,
+            "uniform_reuse": 1
+          },
+          "checkpoints": {
+            "internal": {
+              "file": "internal/best.pt",
+              "epoch": 135,
+              "training_sha256": "326bbcee0ec1898524eff540017fc97477a1d9bbdec276813fde33ff4a9500e3",
+              "checkpoint_sha256": "36a385f2b1fe8b2cc3d72f38198477d69a52f174a35e85f15a8acfe0a216b88e",
+              "script_sha256": "85e72b5dafe062d4ad02404eed5635b6e26c808ca4a9e7bed45f45af72386794"
+            },
+            "edge": {
+              "file": "edge/best.pt",
+              "epoch": 153,
+              "training_sha256": "c7cba5b9a8776dd05a8a6e227961d64f375cceb8059e4f9c35eaee8c5bb85b6d",
+              "checkpoint_sha256": "6526065ecd42ee1a02f3bae630f8f2b986b8a9e4c6820fab91d3e029a4450040",
+              "script_sha256": "b79d3c3a0fc310bdb38cd17155fb8e64883b9ecd53c55318c9d0385a4ffe5815"
+            }
+          },
+          "basis_mode": "fno",
+          "backend": "native-cuda-libtorch-raw8",
+          "original_columns": 8,
+          "corner_normalization": false,
+          "uniformity": "all physical cells in clipped oversampling window",
+          "uniform_templates": "precomputed exact uniform Q4 per orientation and clamp",
+          "fixed_end": "left",
+          "numerical_fallbacks": 0,
+          "timing": {
+            "classify_and_route": 0.0038161,
+            "uniform_templates": 0.0020214,
+            "exact_windows_cpu_solve_and_put": 0.7170326,
+            "exact_and_template": 0.719054,
+            "batched_fno_and_decode": 0.0611779,
+            "gpu_gather": 3.2736000604927546e-05,
+            "forward": 0.058919265747070314,
+            "gpu_scatter": 2.7456000447273257e-05,
+            "total": 0.7901498
+          },
+          "inference": {
+            "internal": {
+              "owner_count": 142,
+              "batches": 1,
+              "cache_hit": 1,
+              "load_seconds": 2.92e-05,
+              "gather_seconds": 1.840000040829182e-05,
+              "forward_seconds": 0.03002060890197754,
+              "scatter_seconds": 1.1264000087976456e-05,
+              "total_seconds": 0.0301731
+            },
+            "edge": {
+              "owner_count": 44,
+              "batches": 1,
+              "cache_hit": 1,
+              "load_seconds": 2.9e-05,
+              "gather_seconds": 1.4336000196635724e-05,
+              "forward_seconds": 0.028898656845092775,
+              "scatter_seconds": 1.61920003592968e-05,
+              "total_seconds": 0.0290333
+            }
+          },
+          "learned_models": [
+            "internal",
+            "edge"
+          ]
+        },
+        "coarse_relative_residual": 6.524673622416881e-09,
+        "corrected_fine_relative_residual": 0.034182863451048345,
+        "initial_load_uy": -82.95844479433333,
+        "corrected_load_uy": -94.2678208549401,
+        "fixed_wall_max": 0,
+        "virtual_work_error": 1.713008814284415e-16,
+        "gpu": "NVIDIA GeForce RTX 4090",
+        "matlab": "25.1.0.2973910 (R2025a) Update 1",
+        "timing_seconds": {
+          "mesh": 0.002502,
+          "basis": 0.7908037,
+          "plan": 0,
+          "assembly": 0.0201756,
+          "load": 0.0002073,
+          "solve": 0.0193411,
+          "recover": 0.0002491,
+          "physical_map": 0.0004328,
+          "seed_ready": 0.834197,
+          "fine_setup": 0.0022494,
+          "correction": 0.0064377,
+          "corrected_ready": 0.843026,
+          "certificate": 0.0016475,
+          "download": 0.0005822,
+          "total": 0.845345
+        },
+        "complete_call_seconds": 0.8513235,
+        "timing_scope": "One warmed mechanics2d call, including fresh bases, reduced assembly/solve, three Q4 corrections, certification and host return. Material creation, warmup, reference, metrics and writes excluded.",
+        "reference": {
+          "solver": "FP64 physical Q4, zero-initial geometric multigrid PCG",
+          "iterations": 20,
+          "true_relative_residual": 8.328107497560331e-10,
+          "seconds": 0.0254931,
+          "load_uy": -94.302348156986,
+          "reaction_xy": [
+            -7.879050190062742e-11,
+            1.000000000106781
+          ]
+        },
+        "initial": {
+          "displacement_l2": 0.09187903486302647,
+          "energy_density_l2": 0.7367575891703202,
+          "displacement_energy_norm": 0.34000606999535127,
+          "integrated_energy": 41.2581410612951,
+          "reference_energy": 47.151174077585495,
+          "load_uy": -82.95844479433333,
+          "load_uy_relative_error": 0.12029290451780017
+        },
+        "corrected": {
+          "displacement_l2": 0.00033045403470137826,
+          "energy_density_l2": 0.00966448349905322,
+          "displacement_energy_norm": 0.008359018312936827,
+          "integrated_energy": 47.11994137835644,
+          "reference_energy": 47.151174077585495,
+          "load_uy": -94.2678208549401,
+          "load_uy_relative_error": 0.000366134064746948
+        }
+      }
+    },
+    "default_10m": {
+      "size": "10m",
+      "grid_elements": [
+        3439,
+        1729
+      ],
+      "dofs": 11902400.0,
+      "owners": [
+        382,
+        192
+      ],
+      "domain_xy": [
+        181,
+        91
+      ],
+      "element_side": 0.05263157894736842,
+      "thickness": 1,
+      "nu": 0.3,
+      "E0": 1,
+      "material": "Independent Uniform[0.01,1] fine-cell E/E0, with solid rectangle x/Lx in [32/181,78/181], y/Ly in [18/91,50/91].",
+      "seed": 91732,
+      "rng": "MATLAB mt19937ar, column-major",
+      "material_sha256_f64": "2ef69a3602fce16058ef4b989a4150a3f75a1ac6b4edcfba8929032b90ede384",
+      "load_node_1based": 5950326.0,
+      "load_xy": [
+        181,
+        45
+      ],
+      "load_vector": [
+        0,
+        -1
+      ],
+      "fixed_edge": "x=0, ux=uy=0",
+      "edge_mode": "fno",
+      "basis": {
+        "owners": 73344,
+        "routes": {
+          "type_1": 1,
+          "type_2": 380,
+          "type_3": 1,
+          "type_4": 190,
+          "type_5": 72200,
+          "type_6": 190,
+          "type_7": 1,
+          "type_8": 380,
+          "type_9": 1,
+          "exact_clamped": 192,
+          "exact_corner": 2,
+          "fno_internal": 66090,
+          "fno_edge": 950,
+          "uniform_build": 1,
+          "uniform_reuse": 6109
+        },
+        "checkpoints": {
+          "internal": {
+            "file": "internal/best.pt",
+            "epoch": 135,
+            "training_sha256": "326bbcee0ec1898524eff540017fc97477a1d9bbdec276813fde33ff4a9500e3",
+            "checkpoint_sha256": "36a385f2b1fe8b2cc3d72f38198477d69a52f174a35e85f15a8acfe0a216b88e",
+            "script_sha256": "85e72b5dafe062d4ad02404eed5635b6e26c808ca4a9e7bed45f45af72386794"
+          },
+          "edge": {
+            "file": "edge/best.pt",
+            "epoch": 153,
+            "training_sha256": "c7cba5b9a8776dd05a8a6e227961d64f375cceb8059e4f9c35eaee8c5bb85b6d",
+            "checkpoint_sha256": "6526065ecd42ee1a02f3bae630f8f2b986b8a9e4c6820fab91d3e029a4450040",
+            "script_sha256": "b79d3c3a0fc310bdb38cd17155fb8e64883b9ecd53c55318c9d0385a4ffe5815"
+          }
+        },
+        "basis_mode": "fno",
+        "backend": "native-cuda-libtorch-raw8",
+        "original_columns": 8,
+        "corner_normalization": false,
+        "uniformity": "all physical cells in clipped oversampling window",
+        "uniform_templates": "precomputed exact uniform Q4 per orientation and clamp",
+        "fixed_end": "left",
+        "numerical_fallbacks": 0,
+        "timing": {
+          "classify_and_route": 0.0123997,
+          "uniform_templates": 0.0020862,
+          "exact_windows_cpu_solve_and_put": 0.6997099,
+          "exact_and_template": 0.7017961,
+          "batched_fno_and_decode": 0.4862326,
+          "gpu_gather": 0.0009376320219598687,
+          "forward": 0.48125651478767395,
+          "gpu_scatter": 0.001217440022155642,
+          "total": 1.2078185
+        },
+        "inference": {
+          "internal": {
+            "owner_count": 66090,
+            "batches": 130,
+            "cache_hit": 1,
+            "load_seconds": 2.85e-05,
+            "gather_seconds": 0.0009161280221305764,
+            "forward_seconds": 0.44539677023887636,
+            "scatter_seconds": 0.0011726720221340652,
+            "total_seconds": 0.4478755
+          },
+          "edge": {
+            "owner_count": 950,
+            "batches": 2,
+            "cache_hit": 1,
+            "load_seconds": 2.34e-05,
+            "gather_seconds": 2.1503999829292296e-05,
+            "forward_seconds": 0.03585974454879761,
+            "scatter_seconds": 4.4768000021576886e-05,
+            "total_seconds": 0.0360265
+          }
+        },
+        "learned_models": [
+          "internal",
+          "edge"
+        ]
+      },
+      "coarse_relative_residual": 7.899307203197194e-09,
+      "corrected_fine_relative_residual": 0.039841778037403096,
+      "initial_load_uy": -85.25189340585464,
+      "corrected_load_uy": -99.73173667462432,
+      "fixed_wall_max": 0,
+      "virtual_work_error": 0,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "matlab": "25.1.0.2973910 (R2025a) Update 1",
+      "timing_seconds": {
+        "mesh": 0.0177638,
+        "basis": 1.2084893,
+        "plan": 0,
+        "assembly": 0.0368561,
+        "load": 0.0008749,
+        "solve": 0.1639968,
+        "recover": 0.0030893,
+        "physical_map": 0.0035384,
+        "seed_ready": 1.437854,
+        "fine_setup": 0.005264,
+        "correction": 0.1241343,
+        "corrected_ready": 1.5674284,
+        "certificate": 0.0147714,
+        "download": 0.0303112,
+        "total": 1.6140101
+      },
+      "complete_call_seconds": 1.6811174,
+      "timing_scope": "One warmed mechanics2d call, including fresh bases, reduced assembly/solve, three Q4 corrections, certification and host return. Material creation, warmup, reference, metrics and writes excluded.",
+      "reference": {
+        "solver": "FP64 physical Q4, zero-initial geometric multigrid PCG",
+        "iterations": 39,
+        "true_relative_residual": 8.740823781731462e-10,
+        "seconds": 0.9304182,
+        "load_uy": -99.7391379600278,
+        "reaction_xy": [
+          -5.17120798092241e-09,
+          0.9999999896038414
+        ]
+      },
+      "initial": {
+        "displacement_l2": 0.09426962007036255,
+        "energy_density_l2": 0.9733308703184912,
+        "displacement_energy_norm": 0.3759363718355831,
+        "integrated_energy": 42.43029833542322,
+        "reference_energy": 49.869568667169766,
+        "load_uy": -85.25189340585464,
+        "load_uy_relative_error": 0.1452513511795056
+      },
+      "corrected": {
+        "displacement_l2": 0.00042200572153710636,
+        "energy_density_l2": 0.018129122432661446,
+        "displacement_energy_norm": 0.009576798341309003,
+        "integrated_energy": 49.86674117231263,
+        "reference_energy": 49.869568667169766,
+        "load_uy": -99.73173667462432,
+        "load_uy_relative_error": 7.420643044309116e-05
+      }
+    },
+    "original_v9_full_array_readback": {
+      "rho": {
+        "shape": [
+          3439,
+          1729
+        ],
+        "max_abs_difference": 0.0,
+        "identical": true
+      },
+      "Uref": {
+        "shape": [
+          1,
+          11902400
+        ],
+        "max_abs_difference": 0.0,
+        "identical": true
+      },
+      "U0": {
+        "shape": [
+          1,
+          11902400
+        ],
+        "max_abs_difference": 0.0,
+        "identical": true
+      },
+      "U3": {
+        "shape": [
+          1,
+          11902400
+        ],
+        "max_abs_difference": 0.0,
+        "identical": true
+      }
+    },
+    "large_120m": {
+      "size": "120m",
+      "grid_elements": [
+        10981,
+        5491
+      ],
+      "dofs": 120626288.0,
+      "owners": [
+        1220,
+        610
+      ],
+      "domain_xy": [
+        181,
+        90.50824150805937
+      ],
+      "element_side": 0.016483016118750568,
+      "thickness": 1,
+      "nu": 0.3,
+      "E0": 1,
+      "material": "Independent Uniform[0.01,1] fine-cell E/E0, with solid rectangle x/Lx in [32/181,78/181], y/Ly in [18/91,50/91].",
+      "seed": 91732,
+      "rng": "MATLAB mt19937ar, column-major",
+      "material_sha256_f64": "5a1245d1110ab4ff5bbc682f602a7b95747fabb9d249bd6474532dc65bb8ef80",
+      "load_node_1based": 60310368.0,
+      "load_xy": [
+        181,
+        44.75138876240779
+      ],
+      "load_vector": [
+        0,
+        -1
+      ],
+      "fixed_edge": "x=0, ux=uy=0",
+      "edge_mode": "fno",
+      "basis": {
+        "owners": 744200,
+        "routes": {
+          "type_1": 1,
+          "type_2": 1218,
+          "type_3": 1,
+          "type_4": 608,
+          "type_5": 740544,
+          "type_6": 608,
+          "type_7": 1,
+          "type_8": 1218,
+          "type_9": 1,
+          "exact_clamped": 610,
+          "exact_corner": 2,
+          "fno_internal": 675248,
+          "fno_edge": 3044,
+          "uniform_build": 1,
+          "uniform_reuse": 65295
+        },
+        "checkpoints": {
+          "internal": {
+            "file": "internal/best.pt",
+            "epoch": 135,
+            "training_sha256": "326bbcee0ec1898524eff540017fc97477a1d9bbdec276813fde33ff4a9500e3",
+            "checkpoint_sha256": "36a385f2b1fe8b2cc3d72f38198477d69a52f174a35e85f15a8acfe0a216b88e",
+            "script_sha256": "85e72b5dafe062d4ad02404eed5635b6e26c808ca4a9e7bed45f45af72386794"
+          },
+          "edge": {
+            "file": "edge/best.pt",
+            "epoch": 153,
+            "training_sha256": "c7cba5b9a8776dd05a8a6e227961d64f375cceb8059e4f9c35eaee8c5bb85b6d",
+            "checkpoint_sha256": "6526065ecd42ee1a02f3bae630f8f2b986b8a9e4c6820fab91d3e029a4450040",
+            "script_sha256": "b79d3c3a0fc310bdb38cd17155fb8e64883b9ecd53c55318c9d0385a4ffe5815"
+          }
+        },
+        "basis_mode": "fno",
+        "backend": "native-cuda-libtorch-raw8",
+        "original_columns": 8,
+        "corner_normalization": false,
+        "uniformity": "all physical cells in clipped oversampling window",
+        "uniform_templates": "precomputed exact uniform Q4 per orientation and clamp",
+        "fixed_end": "left",
+        "numerical_fallbacks": 0,
+        "timing": {
+          "classify_and_route": 0.0931244,
+          "uniform_templates": 0.0047983,
+          "exact_windows_cpu_solve_and_put": 1.0726896,
+          "exact_and_template": 1.0774879,
+          "batched_fno_and_decode": 4.3077512,
+          "gpu_gather": 0.010827392171137094,
+          "forward": 4.273261445283889,
+          "gpu_scatter": 0.011953568157274557,
+          "total": 5.4893076
+        },
+        "inference": {
+          "internal": {
+            "owner_count": 675248,
+            "batches": 1319,
+            "cache_hit": 1,
+            "load_seconds": 2.23e-05,
+            "gather_seconds": 0.010762784171383887,
+            "forward_seconds": 4.228159876585005,
+            "scatter_seconds": 0.011856896156911089,
+            "total_seconds": 4.2536911
+          },
+          "edge": {
+            "owner_count": 3044,
+            "batches": 6,
+            "cache_hit": 1,
+            "load_seconds": 2.19e-05,
+            "gather_seconds": 6.460799975320696e-05,
+            "forward_seconds": 0.04510156869888306,
+            "scatter_seconds": 9.667200036346913e-05,
+            "total_seconds": 0.0453631
+          }
+        },
+        "learned_models": [
+          "internal",
+          "edge"
+        ]
+      },
+      "coarse_relative_residual": 9.210243272720363e-09,
+      "corrected_fine_relative_residual": 0.035904500475405,
+      "initial_load_uy": -86.91359221463797,
+      "corrected_load_uy": -100.85489305635237,
+      "fixed_wall_max": 0,
+      "virtual_work_error": 0,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "matlab": "25.1.0.2973910 (R2025a) Update 1",
+      "timing_seconds": {
+        "mesh": 0.1604353,
+        "basis": 5.4900976,
+        "plan": 0,
+        "assembly": 0.2287756,
+        "load": 0.0017196,
+        "solve": 2.2537802,
+        "recover": 0.0237796,
+        "physical_map": 0.0264503,
+        "seed_ready": 8.2155606,
+        "fine_setup": 0.0223521,
+        "correction": 1.2017541,
+        "corrected_ready": 9.4398397,
+        "certificate": 0.1251356,
+        "download": 0.4159406,
+        "total": 9.9944188
+      },
+      "complete_call_seconds": 10.7707819,
+      "timing_scope": "One warmed mechanics2d call, including fresh bases, reduced assembly/solve, three Q4 corrections, certification and host return. Material creation, warmup, reference, metrics and writes excluded.",
+      "reference": {
+        "solver": "FP64 physical Q4, zero-initial geometric multigrid PCG",
+        "iterations": 23,
+        "true_relative_residual": 7.248276895809667e-10,
+        "seconds": 5.755905,
+        "load_uy": -100.92142144583421,
+        "reaction_xy": [
+          -5.338918673825077e-08,
+          0.9999998946913747
+        ]
+      },
+      "initial": {
+        "displacement_l2": 0.09466971848582104,
+        "energy_density_l2": 0.992969199232427,
+        "displacement_energy_norm": 0.36798979681622496,
+        "integrated_energy": 43.28609075475694,
+        "reference_energy": 50.460707456944576,
+        "load_uy": -86.91359221463797,
+        "load_uy_relative_error": 0.13879936519437963
+      },
+      "corrected": {
+        "displacement_l2": 0.0003153894156057215,
+        "energy_density_l2": 0.007032145837788831,
+        "displacement_energy_norm": 0.007240465905799813,
+        "integrated_energy": 50.39682443906496,
+        "reference_energy": 50.460707456944576,
+        "load_uy": -100.85489305635237,
+        "load_uy_relative_error": 0.0006592097943998176
+      }
+    },
+    "relocated_exact_edge_small": {
+      "status": "PASS",
+      "code_and_models": "Copied release files to a temporary directory containing spaces and Chinese characters.",
+      "dependencies": "Selected the freshly installed virtual-environment Python; no original V9 source or bundled runtime used.",
+      "case": {
+        "size": "small",
+        "grid_elements": [
+          181,
+          91
+        ],
+        "dofs": 33488,
+        "owners": [
+          20,
+          10
+        ],
+        "domain_xy": [
+          181,
+          91
+        ],
+        "element_side": 1,
+        "thickness": 1,
+        "nu": 0.3,
+        "E0": 1,
+        "material": "Independent Uniform[0.01,1] fine-cell E/E0, with solid rectangle x/Lx in [32/181,78/181], y/Ly in [18/91,50/91].",
+        "seed": 91732,
+        "rng": "MATLAB mt19937ar, column-major",
+        "material_sha256_f64": "a03bde223d2bc10fe6577a1fc60467e58d64a9a96df26a32f92e3f9ddc8445e6",
+        "load_node_1based": 16698,
+        "load_xy": [
+          181,
+          45
+        ],
+        "load_vector": [
+          0,
+          -1
+        ],
+        "fixed_edge": "x=0, ux=uy=0",
+        "edge_mode": "exact",
+        "basis": {
+          "owners": 200,
+          "routes": {
+            "type_1": 1,
+            "type_2": 18,
+            "type_3": 1,
+            "type_4": 8,
+            "type_5": 144,
+            "type_6": 8,
+            "type_7": 1,
+            "type_8": 18,
+            "type_9": 1,
+            "exact_clamped": 10,
+            "exact_corner": 2,
+            "exact_edge": 44,
+            "fno_internal": 142,
+            "uniform_build": 1,
+            "uniform_reuse": 1
+          },
+          "checkpoints": {
+            "internal": {
+              "file": "internal/best.pt",
+              "epoch": 135,
+              "training_sha256": "326bbcee0ec1898524eff540017fc97477a1d9bbdec276813fde33ff4a9500e3",
+              "checkpoint_sha256": "36a385f2b1fe8b2cc3d72f38198477d69a52f174a35e85f15a8acfe0a216b88e",
+              "script_sha256": "85e72b5dafe062d4ad02404eed5635b6e26c808ca4a9e7bed45f45af72386794"
+            }
+          },
+          "basis_mode": "internal-fno",
+          "backend": "native-cuda-libtorch-raw8",
+          "original_columns": 8,
+          "corner_normalization": false,
+          "uniformity": "all physical cells in clipped oversampling window",
+          "uniform_templates": "precomputed exact uniform Q4 per orientation and clamp",
+          "fixed_end": "left",
+          "numerical_fallbacks": 0,
+          "timing": {
+            "classify_and_route": 0.0027886,
+            "uniform_templates": 0.0014975,
+            "exact_windows_cpu_solve_and_put": 0.6916854,
+            "exact_and_template": 0.6931829,
+            "batched_fno_and_decode": 0.0316362,
+            "gpu_gather": 4.735999926924706e-05,
+            "forward": 0.030011199951171876,
+            "gpu_scatter": 2.348800003528595e-05,
+            "total": 0.7336486
+          },
+          "inference": {
+            "internal": {
+              "owner_count": 142,
+              "batches": 1,
+              "cache_hit": 1,
+              "load_seconds": 0.0001054,
+              "gather_seconds": 4.735999926924706e-05,
+              "forward_seconds": 0.030011199951171876,
+              "scatter_seconds": 2.348800003528595e-05,
+              "total_seconds": 0.0303003
+            }
+          },
+          "learned_models": [
+            "internal"
+          ]
+        },
+        "coarse_relative_residual": 7.46960962907667e-09,
+        "corrected_fine_relative_residual": 0.03363404532466151,
+        "initial_load_uy": -84.1474611169302,
+        "corrected_load_uy": -94.27354048137924,
+        "fixed_wall_max": 0,
+        "virtual_work_error": 1.68880374126259e-16,
+        "gpu": "NVIDIA GeForce RTX 4090",
+        "matlab": "25.1.0.2973910 (R2025a) Update 1",
+        "timing_seconds": {
+          "mesh": 0.0023353,
+          "basis": 0.734303,
+          "plan": 0,
+          "assembly": 0.0155042,
+          "load": 0.0001474,
+          "solve": 0.0199361,
+          "recover": 0.0001545,
+          "physical_map": 0.0004732,
+          "seed_ready": 0.7732138,
+          "fine_setup": 0.0023074,
+          "correction": 0.0064594,
+          "corrected_ready": 0.7821168,
+          "certificate": 0.001634,
+          "download": 0.000444,
+          "total": 0.784274
+        },
+        "complete_call_seconds": 0.790202,
+        "timing_scope": "One warmed mechanics2d call, including fresh bases, reduced assembly/solve, three Q4 corrections, certification and host return. Material creation, warmup, reference, metrics and writes excluded.",
+        "reference": {
+          "solver": "FP64 physical Q4, zero-initial geometric multigrid PCG",
+          "iterations": 20,
+          "true_relative_residual": 8.328107497560331e-10,
+          "seconds": 0.0276907,
+          "load_uy": -94.302348156986,
+          "reaction_xy": [
+            -7.879050190062742e-11,
+            1.000000000106781
+          ]
+        },
+        "initial": {
+          "displacement_l2": 0.07994307898270477,
+          "energy_density_l2": 0.7244353012457205,
+          "displacement_energy_norm": 0.3199180886192062,
+          "integrated_energy": 41.822095760279375,
+          "reference_energy": 47.151174077585495,
+          "load_uy": -84.1474611169302,
+          "load_uy_relative_error": 0.1076843497380453
+        },
+        "corrected": {
+          "displacement_l2": 0.00028655997590282343,
+          "energy_density_l2": 0.009758543143848797,
+          "displacement_energy_norm": 0.008117132863878123,
+          "integrated_energy": 47.12547309128061,
+          "reference_energy": 47.151174077585495,
+          "load_uy": -94.27354048137924,
+          "load_uy_relative_error": 0.00030548206030667213
+        }
+      }
+    },
+    "scope": "One warmed call per case. Timing excludes material creation, warmup, reference, metrics and file writes. No training performed. Linux and macOS are untested."
+  },
+  "scope": "Default changed to original smooth 120m case. Current metrics were recomputed. All three full displacement/reference arrays match original optimized V9 exactly. One warmed timing sample; historical medians remain distinct. No retraining."
+}

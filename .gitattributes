@@ -1,0 +1,8 @@
+* text=auto
+*.m text eol=lf
+*.py text eol=lf
+*.cu text eol=lf
+*.cmd text eol=crlf
+*.ts binary
+*.mat binary
+*.mexw64 binary
